@@ -124,7 +124,7 @@ public class ProductController extends HttpServlet {
         try {
             Product newProduct = new Product(name,
                     Double.parseDouble(price),
-                    Integer.parseInt(quantity),
+                    Integer.parseInt(quantity)
                     , color, detail, category);
             productDAO.insert(newProduct);
             showListAllProduct(request, response);
@@ -145,9 +145,10 @@ public class ProductController extends HttpServlet {
         String category = request.getParameter("category");
 
         try {
-            Product newProduct = new Product(Integer.parseInt(id), name,
+            Product newProduct = new Product(Integer.parseInt(id),
+                    name,
                     Double.parseDouble(price),
-                    Integer.parseInt(quantity),
+                    Integer.parseInt(quantity)
                     , color, detail, category);
             productDAO.update(newProduct);
             showListAllProduct(request, response);
