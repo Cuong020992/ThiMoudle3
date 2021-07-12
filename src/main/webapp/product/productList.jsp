@@ -31,9 +31,9 @@
                     <td>${product.detail}</td>
                     <td>${product.category}</td>
                     <td>
-                        <a href="/productManager?action=create">Create</a>
-                        <a href="/productManager?action=edit&id=${product.id}">Edit</a>
-                        <a href="/productManager?action=delete&id=${product.id}">Delete</a>
+                        <a href="/product?action=create">Create</a>
+                        <a href="/product?action=edit&id=${product.id}">Edit</a>
+                        <a href="/product?action=delete&id=${product.id}">Delete</a>
                     </td>
                 </tr>
             </c:forEach>

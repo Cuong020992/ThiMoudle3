@@ -1,10 +1,10 @@
 dao/IProductDAO.java
  dao.IProductDAO
-controller/ProductController.java
- controller.ProductController
+model/Product.java
+ model.Product
 dao/SQLConnection.java
  dao.SQLConnection
 dao/ProductDAO.java
  dao.ProductDAO
-model/Product.java
- model.Product
+controller/ProductController.java
+ controller.ProductController

@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "ProductController", value = "/ProductManager")
+@WebServlet(name = "ProductController", value = "/product")
 public class ProductController extends HttpServlet {
     private IProductDAO<Product> productDAO;
     private List<Product> listP;
